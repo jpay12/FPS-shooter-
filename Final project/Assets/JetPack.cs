@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JetPack : MonoBehaviour
+public class jetpack : MonoBehaviour
 {
    public float maxFuel = 4f;
     public float thrustForce = 0.5f;
@@ -37,5 +37,4 @@ public class JetPack : MonoBehaviour
             effect.Stop();
         }
     }
-    
 }
