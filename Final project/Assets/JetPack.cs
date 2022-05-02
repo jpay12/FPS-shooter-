@@ -21,7 +21,7 @@ public class jetpack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetAxis("Jump") > 0f && curFuel > 0f)
+        if (Input.GetAxis("Jump") > 0.5f && curFuel > 0.5f)
         {
             curFuel -= Time.deltaTime;
             rigid.AddForce(rigid.transform.up * thrustForce, ForceMode.Impulse);
